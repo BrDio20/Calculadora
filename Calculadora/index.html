@@ -2,75 +2,81 @@
 <html lang="BR-pt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="tstyle.css" rel="stylesheet">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <title>Document</title>
 </head>
 
 <body>
-    <h1>CALCULADORA</h1>
-    <header>
-        <div class="options"></div>
-    </header>
+  <div class="container">
+    <h1>Calculator</h1>
+    <div class="calc">
 
-    <main>
-        <div class="calc">
+      <nav class="options">
+        <button class="option-button" id="option-button"><u>V</u>iew</button>
+        <button class="option-button" id="option-button"><u>E</u>dit</button>
+        <button class="option-button" id="option-button"><u>H</u>elp</button>
+      </nav>
 
-            <table class="box">
-                <div class="visor"></div>
-                <thead></thead>
-                <tbody>
-                    <tr>
-                        <td> <button>MC</button> </td>
-                        <td> <button>MR</button> </td>
-                        <td> <button>MS</button> </td>
-                        <td> <button>M+</button> </td>
-                        <td> <button>M-</button> </td>
-                    </tr>
-                    <tr>
-                        <td> <button>&#8592;</button> </td>
-                        <td> <button>CE</button> </td>
-                        <td> <button>C</button> </td>
-                        <td> <button>±</button> </td>
-                        <td> <button>√</button> </td>
-                    </tr>
+      <div class="content">
+        <div class="visor"></div>
+        
+        <table class="box">
+          <thead>
+          </thead>
+        <tbody>
+          <tr>
+            <td> <button id="table-button">MC</button> </td>
+            <td> <button id="table-button">MR</button> </td>
+            <td> <button id="table-button">MS</button> </td>
+            <td> <button id="table-button">M+</button> </td>
+            <td> <button id="table-button">M-</button> </td>
+          </tr>
+          <tr>
+            <td> <button id="table-button">&#8592;</button> </td>
+            <td> <button id="table-button">CE</button> </td>
+            <td> <button id="table-button">C</button> </td>
+            <td> <button id="table-button">±</button> </td>
+            <td> <button id="table-button">√</button> </td>
+          </tr>
 
-                    <tr>
-                        <td> <button>7</button> </td>
-                        <td> <button>8</button> </td>
-                        <td> <button>9</button> </td>
-                        <td> <button>/</button> </td>
-                        <td> <button>%</button> </td>
-                    </tr>
+          <tr>
+            <td> <button id="table-button">7</button> </td>
+            <td> <button id="table-button">8</button> </td>
+            <td> <button id="table-button">9</button> </td>
+            <td> <button id="table-button">/</button> </td>
+            <td> <button id="table-button">%</button> </td>
+          </tr>
+          
+          <tr>
+            <td> <button id="table-button">4</button> </td>
+            <td> <button id="table-button">5</button> </td>
+            <td> <button id="table-button">6</button> </td>
+            <td> <button id="table-button">*</button> </td>
+            <td> <button id="table-button">1/x</button> </td>
+          </tr>
+          
+          <tr>
+            <td> <button id="table-button">1</button> </td>
+            <td> <button id="table-button">2</button> </td>
+            <td> <button id="table-button">3</button> </td>
+            <td> <button id="table-button">-</button> </td>
+            <td rowspan="2"> <button class="equal" id="table-button">=</button> </td>
+          </tr>
 
-                    <tr>
-                        <td> <button>4</button> </td>
-                        <td> <button>5</button> </td>
-                        <td> <button>6</button> </td>
-                        <td> <button>*</button> </td>
-                        <td> <button>1/x</button> </td>
-                    </tr>
-
-                    <tr>
-                        <td> <button>1</button> </td>
-                        <td> <button>2</button> </td>
-                        <td> <button>3</button> </td>
-                        <td> <button>-</button> </td>
-                        <td rowspan="2"> <button class="equal">=</button> </td>
-                    </tr>
-
-                    <tr>
-                        <td colspan="2"> <button class="zero">0</button> </td>
-                        <td> <button>,</button> </td>
-                        <td> <button>+</button> </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </main>
-
+          <tr>
+            <td colspan="2"> <button class="zero" id="table-button">0</button> </td>
+            <td> <button id="table-button">,</button> </td>
+            <td> <button id="table-button">+</button> </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+    
 </body>
 
 </html>
