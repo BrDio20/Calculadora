@@ -3,47 +3,74 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet"></link>
-    <title>Projeto_Calculadora</title>
+    <link href="tstyle.css" rel="stylesheet">
+    <title>Document</title>
 </head>
 
 <body>
+    <h1>CALCULADORA</h1>
     <header>
-        <h1 class="title">CALCULADORA</h1>
+        <div class="options"></div>
     </header>
 
     <main>
-        <div class="calculator" id="cal">
-            <div class="visor">
-                <input id="vis" type="number">
-            </div>
-            <div class="numbers" id="num">
-                <button class="one">1</button>
-                <button class="two">2</button>
-                <button class="three">3</button>
-                <button class="four">4</button>
-                <button class="five">5</button>
-                <button class="six">6</button>
-                <button class="seven">7</button>
-                <button class="eight">8</button>
-                <button class="nine">9</button>
-                <button class="zero">0</button>
-            </div>
-            <div class="operators" id="op">
-                <button class="soma" id="sum">+</button>
-                <button class="subtracao" id="sub">-</button>
-                <button class="multiplicacao" id="mult">/</button>
-                <button class="divisao" id="div">*</button>
-            </div>
-            <div class="result">
-                <button id="res">=</button>
-            </div>
+        <div class="calc">
+
+            <table class="box">
+                <div class="visor"></div>
+                <thead></thead>
+                <tbody>
+                    <tr>
+                        <td> <button>MC</button> </td>
+                        <td> <button>MR</button> </td>
+                        <td> <button>MS</button> </td>
+                        <td> <button>M+</button> </td>
+                        <td> <button>M-</button> </td>
+                    </tr>
+                    <tr>
+                        <td> <button>&#8592;</button> </td>
+                        <td> <button>CE</button> </td>
+                        <td> <button>C</button> </td>
+                        <td> <button>±</button> </td>
+                        <td> <button>√</button> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <button>7</button> </td>
+                        <td> <button>8</button> </td>
+                        <td> <button>9</button> </td>
+                        <td> <button>/</button> </td>
+                        <td> <button>%</button> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <button>4</button> </td>
+                        <td> <button>5</button> </td>
+                        <td> <button>6</button> </td>
+                        <td> <button>*</button> </td>
+                        <td> <button>1/x</button> </td>
+                    </tr>
+
+                    <tr>
+                        <td> <button>1</button> </td>
+                        <td> <button>2</button> </td>
+                        <td> <button>3</button> </td>
+                        <td> <button>-</button> </td>
+                        <td rowspan="2"> <button class="equal">=</button> </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"> <button class="zero">0</button> </td>
+                        <td> <button>,</button> </td>
+                        <td> <button>+</button> </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </main>
 
-    <footer>
-    </footer>
 </body>
 
 </html>
