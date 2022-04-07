@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -7,29 +8,63 @@ body {
     margin: auto;
 }
 
-.visor {
-    width: 50px;
-    height: 30px;
-    border: 1px solid blue;
+h1{
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
 }
 
+.container{
+  border-color: rgb(47, 48, 51);
+  border: 1px solid black;
+  width: 229px;
+  background-color: rgb(102, 203, 234);
+}
+
+
+.options{
+    border-top: 1px solid rgb(124,174,200);
+    margin: 0 auto 0;           
+    background-color: rgb(240, 240, 240);
+    
+}
+
+.option-button{
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    height: 16px;
+}
+
+.visor {
+    background: radial-gradient(rgb(221, 231, 243), white) ;
+    width: 188px;
+    height: 48px;
+    border: 1px solid rgb(142,156,173);
+    border-radius: 2px;
+  }
+
 .calc {
-    box-sizing: border-box;
-    border: 1px solid black;
-    padding: 5px 5px 5px;
-    width: 200px;
+    border: none;
+    margin: 5px;
+}
+
+.content{
+  background-color: rgb(221, 231, 243);
+  padding: 11px;
 }
 
 h1 {
     text-align: center;
 }
 
-main {
-    margin: 0 43% 0;
+table{
+  width: 100%;
+  margin: auto;
 }
 
 button {
-    border-radius: 3px;
+    border-radius: 2px;
     height: 25px;
     width: 32px;
     border: 1px solid rgb(135, 151, 170);
@@ -44,6 +79,6 @@ button {
     height: 55px;
 }
 
-button:hover {
-    background-color: rgb(234, 237, 240)
+#table-button:hover {
+  background: linear-gradient( rgb(255, 234, 210) 50%, rgb(255, 209, 111) 50%);
 }
