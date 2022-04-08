@@ -6,79 +6,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
-    <script src="main.js" refer></script>
+    <script src="main.js" defer></script>
     <title>Document</title>
 </head>
 
 <body>
-    <div class="background">
-        <div class="container">
-            <h1>Calculator</h1>
-            <div class="calc">
+    <div class="container">
+        <h1>Calculator</h1>
+        <div class="calc">
 
-                <nav class="options">
-                    <button class="option-button" id="option-button"><u>V</u>iew</button>
-                    <button class="option-button" id="option-button"><u>E</u>dit</button>
-                    <button class="option-button" id="option-button"><u>H</u>elp</button>
-                </nav>
+            <nav class="options">
+                <button class="option-button" id="option-button"><u>V</u>iew</button>
+                <button class="option-button" id="option-button"><u>E</u>dit</button>
+                <button class="option-button" id="option-button"><u>H</u>elp</button>
+            </nav>
 
-                <div class="content">
-                    <div id="visor"></div>
+            <div class="content">
+                <div id="visor"></div>
 
-                    <table class="box">
-                        <thead>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td> <button class="table-button">MC</button> </td>
-                                <td> <button class="table-button">MR</button> </td>
-                                <td> <button class="table-button">MS</button> </td>
-                                <td> <button class="table-button">M+</button> </td>
-                                <td> <button class="table-button">M-</button> </td>
-                            </tr>
-                            <tr>
-                                <td> <button class="table-button" onclick="back()">&#8592;</button> </td>
-                                <td> <button class="table-button">CE</button> </td>
-                                <td> <button class="table-button" onclick="clean()">C</button> </td>
-                                <td> <button class="table-button">±</button> </td>
-                                <td> <button class="table-button" onclick="insert('√')">√</button> </td>
-                            </tr>
+                <table class="box">
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> <button class="table-button">MC</button> </td>
+                            <td> <button class="table-button">MR</button> </td>
+                            <td> <button class="table-button">MS</button> </td>
+                            <td> <button class="table-button">M+</button> </td>
+                            <td> <button class="table-button">M-</button> </td>
+                        </tr>
+                        <tr>
+                            <td> <button class="table-button">&#8592;</button> </td>
+                            <td> <button class="table-button">CE</button> </td>
+                            <td> <button class="table-button">C</button> </td>
+                            <td> <button class="table-button">±</button> </td>
+                            <td> <button class="table-button">√</button> </td>
+                        </tr>
 
-                            <tr>
-                                <td> <button class="table-button" onclick="insert('7')">7</button> </td>
-                                <td> <button class="table-button" onclick="insert('8')">8</button> </td>
-                                <td> <button class="table-button" onclick="insert('9')">9</button> </td>
-                                <td> <button class="table-button" onclick="insert('/')">/</button> </td>
-                                <td> <button class="table-button" onclick="insert('%')">%</button> </td>
-                            </tr>
+                        <tr>
+                            <td> <button class="table-button">7</button> </td>
+                            <td> <button class="table-button">8</button> </td>
+                            <td> <button class="table-button">9</button> </td>
+                            <td> <button class="table-button">/</button> </td>
+                            <td> <button class="table-button">%</button> </td>
+                        </tr>
 
-                            <tr>
-                                <td> <button class="table-button" onclick="insert('4')">4</button> </td>
-                                <td> <button class="table-button" onclick="insert('5')">5</button> </td>
-                                <td> <button class="table-button" onclick="insert('6')">6</button> </td>
-                                <td> <button class="table-button" onclick="insert('*')">*</button> </td>
-                                <td> <button class="table-button">1/x</button> </td>
-                            </tr>
+                        <tr>
+                            <td> <button class="table-button">4</button> </td>
+                            <td> <button class="table-button">5</button> </td>
+                            <td> <button class="table-button">6</button> </td>
+                            <td> <button class="table-button">*</button> </td>
+                            <td> <button class="table-button">1/x</button> </td>
+                        </tr>
 
-                            <tr>
-                                <td> <button class="table-button" onclick="insert('1')">1</button> </td>
-                                <td> <button class="table-button" onclick="insert('2')">2</button> </td>
-                                <td> <button class="table-button" onclick="insert('3')">3</button> </td>
-                                <td> <button class="table-button" onclick="insert('-')">-</button> </td>
-                                <td rowspan="2"> <button class="table-button equal" onclick="calculate()">=</button> </td>
-                            </tr>
+                        <tr>
+                            <td> <button class="table-button">1</button> </td>
+                            <td> <button class="table-button">2</button> </td>
+                            <td> <button class="table-button">3</button> </td>
+                            <td> <button class="table-button">-</button> </td>
+                            <td rowspan="2"> <button class="table-button equal">=</button>
+                            </td>
+                        </tr>
 
-                            <tr>
-                                <td colspan="2"> <button class="table-button zero" onclick="insert('0')">0</button> </td>
-                                <td> <button class="table-button" onclick="insert(',')">,</button> </td>
-                                <td> <button class="table-button" onclick="insert('+')">+</button> </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                        <tr>
+                            <td colspan="2"> <button class="table-button zero">0</button> </td>
+                            <td> <button class="table-button">,</button> </td>
+                            <td> <button class="table-button">+</button> </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
