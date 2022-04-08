@@ -1,17 +1,16 @@
 * {
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 html,
 body {
-    height: 100vh;
-    margin: auto;
-}
-
-.background {
-    height: 100%;
-    background-image: linear-gradient(to bottom, rgb(111, 173, 250), rgb(210, 212, 250));
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom, rgb(111, 173, 250), rgb(210, 212, 250));
 }
 
 h1 {
@@ -22,10 +21,7 @@ h1 {
 }
 
 .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: auto;
     border-color: rgb(47, 48, 51);
     border: 1px solid black;
     width: 229px;
